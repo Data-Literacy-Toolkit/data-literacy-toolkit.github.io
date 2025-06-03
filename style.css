@@ -59,19 +59,21 @@ ul, ol {
 
 .float-image-left,
 .float-image-right {
-  max-height: 8em; /* Adjust as needed */
+  max-height: 16em;
   width: auto;
   height: auto;
-  margin: 0 15px 15px 0;
   border-radius: 8px;
+  margin-bottom: 1em; 
 }
 
 .float-image-left {
   float: left;
+  margin-right: 1em; 
 }
 
 .float-image-right {
   float: right;
+  margin-left: 1em; 
 }
 
 
