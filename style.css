@@ -51,7 +51,7 @@ ul, ol {
 
 .nav-links {
   display: flex;
-  text-align: center;
+  justify-content: center;
   gap: 2rem;
   flex-wrap: wrap;
 }
