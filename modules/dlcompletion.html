@@ -23,61 +23,13 @@
   </section>
 	
 	<section>
-	<h2>Please complete the following form if you would like to receive a completion certificate.</h2>
-
-    <form id="certForm">
-    <input type="text" id="name" placeholder="Enter your full name" required />
-    <button type="submit">Generate Certificate</button>
-  </form>
-
-  <script>
-    const { jsPDF } = window.jspdf;
-
-    document.getElementById("certForm").addEventListener("submit", async function (e) {
-      e.preventDefault();
-      const name = document.getElementById("name").value;
-      const date = new Date().toLocaleDateString();
-
-      const doc = new jsPDF({
-        orientation: "landscape",
-        unit: "pt",
-        format: "a4"
-      });
-
-      const img = new Image();
-      img.src = "../images/banner1.jpg"; 
-
-      img.onload = function () {
-        doc.addImage(img, "JPG", 100, 30, 600, 100);
-
-        doc.setFont("times", "bold");
-        doc.setFontSize(26);
-        doc.text("Certificate of Completion for the Data Literacy Toolkit", 297.5, 180, { align: "center" });
-
-        doc.setFont("times", "normal");
-        doc.setFontSize(16);
-        doc.text(`Awarded to: ${name} on ${date}`, 297.5, 230, { align: "center" });
-
-        doc.setFontSize(14);
-        doc.text("Data Literacy Toolkit Team: Jeonghyun (Annie) Kim, Lingzi Hong, and Brady Lund", 297.5, 280, { align: "center" });
-
-        doc.save(`Data-Literacy-Certificate-${name}.pdf`);
-      };
-
-      img.onerror = function () {
-        alert("Failed to load image. Check that image exists and is reachable.");
-      };
-    });
-  </script>
- 
+	<div style="margin-top: 2rem; font-size: 14px; text-align: center; color: #555;">
+  The creation of this toolkit was supported by a grant from the<br>
+  <strong>Institute of Museum and Library Services</strong>, RE-256673-OLS-24
+	</div>
 	</section>
-
-	<section>	
-		<div class="nav-links">
-			<a href="../modules/dlmodule6.html">← Previous Module</a>&nbsp;&nbsp;&nbsp;
-			<a href="../index.html">Return to Introduction Page</a>
-		</div>
-    </section>
+	
+	
   </main>
 
   <footer>
