@@ -57,6 +57,22 @@ ul, ol {
   padding-left: 1.5rem;
 }
 
+.float-image-left {
+  width: 200px;
+  height: auto;
+  margin: 0 15px 15px 0;
+  float: left;
+  border-radius: 8px;
+}
+
+.float-image-right {
+  width: 200px;
+  height: auto;
+  margin: 0 15px 15px 0;
+  float: right;
+  border-radius: 8px;
+}
+
 .nav-links {
   display: flex;
   justify-content: center;
