@@ -49,19 +49,19 @@ ul, ol {
   padding-left: 1.5rem;
 }
 
+.nav-links {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
 footer {
   text-align: center;
   padding: 1rem;
   background: #eee;
   font-size: 0.9em;
   margin-top: 2rem;
-}
-
-nav-links {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  flex-wrap: wrap;
 }
 
 module-footer {
