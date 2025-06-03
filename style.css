@@ -59,10 +59,9 @@ ul, ol {
 
 .float-image-left,
 .float-image-right {
-  max-height: 8em; /* limits height to roughly a paragraph */
-  height: auto;
+  max-height: 8em; /* Adjust as needed */
   width: auto;
-  max-width: 100%; /* avoids stretching if small images */
+  height: auto;
   margin: 0 15px 15px 0;
   border-radius: 8px;
 }
