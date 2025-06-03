@@ -57,21 +57,24 @@ ul, ol {
   padding-left: 1.5rem;
 }
 
-.float-image-left {
-  width: 200px;
+.float-image-left,
+.float-image-right {
+  max-height: 8em; /* limits height to roughly a paragraph */
   height: auto;
+  width: auto;
+  max-width: 100%; /* avoids stretching if small images */
   margin: 0 15px 15px 0;
-  float: left;
   border-radius: 8px;
 }
 
-.float-image-right {
-  width: 200px;
-  height: auto;
-  margin: 0 15px 15px 0;
-  float: right;
-  border-radius: 8px;
+.float-image-left {
+  float: left;
 }
+
+.float-image-right {
+  float: right;
+}
+
 
 .nav-links {
   display: flex;
