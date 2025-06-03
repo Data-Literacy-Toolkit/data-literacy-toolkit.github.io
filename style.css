@@ -8,9 +8,10 @@ body {
 }
 
 header {
-  background: #000000; 
-  color: #0000000;
+  background: #004080; /* Adjust if needed */
+  color: #fff;
   padding: 1rem 0;
+  text-align: center;
 }
 
 .banner-container {
@@ -20,9 +21,11 @@ header {
 }
 
 .banner {
-  max-height: 300px;
+  max-height: 300px; /* Set the desired header height */
   width: auto;
   height: auto;
+  max-width: 100%;
+  display: block;
 }
 
 
