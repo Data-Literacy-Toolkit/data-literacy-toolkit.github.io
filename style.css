@@ -112,6 +112,15 @@ ul, ol {
   margin-left: 2em; 
 }
 
+.img-left  {
+	float: left;
+	max-height: 16em;
+	max-width: 24em;
+	height: auto;
+	width: auto;
+	border-radius: 8px;
+	margin-bottom: 1em;
+}
 
 .nav-links {
   display: flex;
