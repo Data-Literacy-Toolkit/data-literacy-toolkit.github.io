@@ -114,8 +114,10 @@ ul, ol {
 
 .img-left  {
 	float: left;
-	height: 12em;
-	width: 28em;
+	max-height: 12em;
+	max-width: 28em;
+	height: auto;
+	width: auto;
 	border-radius: 8px;
 	margin-bottom: 1em;
 	margin-right: 2em;
