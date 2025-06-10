@@ -114,11 +114,11 @@ ul, ol {
 
 .img-left  {
 	float: left;
-	height: 16em;
-	width: 24em;
+	height: 12em;
+	width: 28em;
 	border-radius: 8px;
 	margin-bottom: 1em;
-	margin-right: 3em;
+	margin-right: 2em;
 }
 
 .nav-links {
