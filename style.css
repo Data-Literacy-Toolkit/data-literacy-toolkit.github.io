@@ -29,14 +29,13 @@ header {
 }
 
 .pi-container {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: 1.5em;
   margin-bottom: 2em;
 }
 
 .pi {
-  flex: 1 1 250px;
   background-color: #f9f9f9;
   padding: 1em;
   border-radius: 10px;
@@ -62,6 +61,13 @@ header {
   font-size: 0.95em;
   color: #333;
 }
+
+@media (max-width: 600px) {
+  .pi-container {
+    grid-template-columns: 1fr;
+  }
+}
+
 
 
 .form {
