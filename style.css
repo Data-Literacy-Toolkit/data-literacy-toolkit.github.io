@@ -104,12 +104,12 @@ ul, ol {
 
 .float-image-left {
   float: left;
-  margin-right: 1em; 
+  margin-right: 2em; 
 }
 
 .float-image-right {
   float: right;
-  margin-left: 1em; 
+  margin-left: 2em; 
 }
 
 
