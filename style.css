@@ -29,7 +29,7 @@ header {
 }
 
 .main-nav {
-  background-color: #003366; /* Dark blue or your brand color */
+  background-color: #000000; 
   padding: 10px 0;
 }
 
@@ -56,7 +56,7 @@ header {
 }
 
 .main-nav a:hover {
-  background-color: #0055aa;
+  background-color: #486948;
   border-radius: 4px;
 }
 
