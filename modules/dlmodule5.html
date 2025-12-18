@@ -6,26 +6,50 @@
   <title>Module 5: Managing Data Responsibly and Ethically</title>
   <link rel="stylesheet" href="../style.css" />
 </head>
+
 <body>
+
+<!-- header + navigation -->
   <header>
-	  <div class="banner-container">
-        <a href="../index.html"><img src="../images/banner6.png" alt="Banner Image" class="banner" /></a>
-	</div>
+    <nav class="main-nav" aria-label="Main Navigation">
+      <div class="nav-container">
+
+        <!-- left nav: site title -->
+        <a class="site-title" href="../index.html"><img src="../images/dataicon.svg" width="15px" alt="Data Icon"/> Data Literacy Toolkit</a>
+
+        <!-- right: module links -->
+        <ul class="nav-right">
+          <li><a href="../modules/dlmodule1.html">Module 1</a></li>
+          <li><a href="../modules/dlmodule2.html">Module 2</a></li>
+          <li><a href="../modules/dlmodule3.html">Module 3</a></li>
+          <li><a href="../modules/dlmodule4.html">Module 4</a></li>
+          <li><a class=active href="../modules/dlmodule5.html">Module 5</a></li>
+        </ul>
+
+        <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false"> ☰ </button>
+
+      </div>
+    </nav>
   </header>
 
-<nav class="main-nav">
-  <ul>
-    <li><a href="../index.html">Home</a></li>
-    <li><a href="../modules/dlmodule1.html">Module 1</a></li>
-    <li><a href="../modules/dlmodule2.html">Module 2</a></li>
-    <li><a href="../modules/dlmodule3.html">Module 3</a></li>
-    <li><a href="../modules/dlmodule4.html">Module 4</a></li>
-    <li><a href="../modules/dlmodule5.html">Module 5</a></li>
-  </ul>
-</nav>
+  <!-- hero section -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="row">
 
+        <div class="column" style="color: #fefdfb;">
+          <h1>Module 5: Managing Data Responsibly and Ethically</h1>
+          <p>
+            Addressing privacy, bias, and ethical data use.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- main content -->
   <main>
-      <h1>Module 5: Managing Data Responsibly and Ethically</h1>
     <section>
       <h2>Learning Objectives</h2>
       <ul>
@@ -34,6 +58,8 @@
         <li>Create and advocate for policies and practices that prioritize data privacy, security, and transparency. </li>
       </ul>
     </section>
+
+<hr class="divider">
 
     <section>
       <h2>Exploring Ethical Principles of Data Use</h2>
@@ -47,12 +73,16 @@
 	  <p>These principles should not be considered static rules but rather dynamic guidelines that will require recalculations with the emergence of evolving technologies, legal requirements, and societal expectations. Ethical data use requires careful reflection and discussions about the potential consequences of data-driven decisions, and our higher education institutions have a responsibility to incorporate these core values into their culture and daily practices. In so doing, they can ensure that data use supports, rather than undermines, their educational and social missions.</p>
 	</section>
 
+<hr class="divider">
+
     <section>
       <h2>Teaching Why Ethical Data Use Matters</h2>
       	  	  <img src="../images/Module6_2.jpg" alt="person using a computer" class="float-image-left" />
 	  <p>We know that ethical data use is important, but how do we teach this to others? While it is good to provide some theoretical background on what these principles are and how they are integral to many of our core ethical beliefs in society, the most effective discussions will likely center on the practical implications of these policies and case studies of what happens when they go awry. For instance, an instructor might provide an example of data collected about marginalized patient populations from a health center without patients' permission and used by researchers to evaluate the demographics and health conditions of these patients. Using this data without patient permission poses tremendous risks to those patients - their health and well-being and even their safety <a href="#ref4">[4]</a>.  </p>
 	  <p>Additionally, students should reflect on important questions related to the stewardship of data, such as “who benefits from this data and its use?” and “what risks are posed if this data gets into the wrong hands?” The motivations of the owner of the data can often be just as significant as what the data represents. By encouraging learners to analyze these questions from multiple perspectives, such as that of data subjects, data owners, policy makers, and even malicious actors who may exploit the data, we can develop better understandings of why ethical data use is so important. </p>
     </section>
+
+<hr class="divider">
 	
 	<section>
       <h2>How Can We Promote Trustworthy Data Practices?</h2>
@@ -62,10 +92,14 @@
 	  <p>These activities can be supported by ensuring ongoing evaluation and accountability mechanisms within the institution. Including a range of voices in evaluating the state of the data culture on campus - such as students and faculty from all disciplines - can support the strengthening of this culture while avoiding unintended reinforcement of systemic inequities within the culture. All should feel comfortable in taking a leadership role and providing their expertise in technology ethics, not just those from highly technical disciplines. </p>
     </section>
 
+<hr class="divider">
+
     <section>
       <h2>Case Example</h2>
 	  <p>Seton Hall University Libraries offers a <a href="https://library.shu.edu/dataethics" target="_blank" rel="noopener noreferrer">data ethics guide</a> that provides a compelling overview of responsible data practices for both students and faculty at the university. This guide emphasizes transparency in data collection and usage for research, building in user privacy support through clear access policies, and promoting digital and data literacy through ongoing educational efforts. This case highlights how libraries, often at the intersection of information access and user data, can lead the way in establishing ethical standards that influence broader campus data practices.</p>
     </section>
+
+<hr class="divider">
 
     <section>
       <h2>Reflection Activity</h2>
@@ -92,6 +126,8 @@
       </ul>
     </section>
 
+<hr class="divider">
+
     <section>
       <h2>References</h2>
       <ol>
@@ -113,8 +149,18 @@
   </main>
 
   <footer>
-    <p>&copy; 2025 Data Literacy Toolkit. All rights reserved.</p>
+    <p>Content on this site is licensed under a <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener noreferrer">CC BY-NC 4.0 license</a>.</p>
   </footer>
+
+<script>
+  const hamburger = document.querySelector('.hamburger');
+  const navMenu = document.querySelector('.nav-right');
+
+  hamburger.addEventListener('click', () => {
+    const isOpen = navMenu.classList.toggle('open');
+    hamburger.setAttribute('aria-expanded', isOpen);
+  });
+</script>
 
 </body>
 </html>

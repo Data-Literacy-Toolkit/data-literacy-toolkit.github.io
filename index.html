@@ -11,35 +11,74 @@
 
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
+
+  <!-- header + navigation -->
   <header>
-  <div class="banner-container">
-        <a href="../index.html"><img src="images/banner1.jpg" alt="Banner" class="banner" /></a>
-  </div>
-</header>
+    <nav class="main-nav" aria-label="Main Navigation">
+      <div class="nav-container">
 
-<nav class="main-nav">
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="modules/dlmodule1.html">Module 1</a></li>
-    <li><a href="modules/dlmodule2.html">Module 2</a></li>
-    <li><a href="modules/dlmodule3.html">Module 3</a></li>
-    <li><a href="modules/dlmodule4.html">Module 4</a></li>
-    <li><a href="modules/dlmodule5.html">Module 5</a></li>
-  </ul>
-</nav>
+        <!-- left nav: site title -->
+        <a class="site-title" href="index.html"><img src="images/dataicon.svg" width="15px" alt="Data Icon"/> Data Literacy Toolkit</a>
 
+        <!-- right: module links -->
+        <ul class="nav-right">
+          <li><a href="modules/dlmodule1.html">Module 1</a></li>
+          <li><a href="modules/dlmodule2.html">Module 2</a></li>
+          <li><a href="modules/dlmodule3.html">Module 3</a></li>
+          <li><a href="modules/dlmodule4.html">Module 4</a></li>
+          <li><a href="modules/dlmodule5.html">Module 5</a></li>
+        </ul>
 
+        <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false"> ☰ </button>
+
+      </div>
+    </nav>
+  </header>
+
+  <!-- hero section -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="row">
+
+        <div class="column" style="color: #fefdfb;">
+          <h1>Empowering Data Literacy Across College Campuses</h1>
+          <p>
+            The Data Literacy Toolkit provides educators and librarians with practical
+            resources, strategies, and case studies to build data literacy across campuses.
+          </p>
+          <p class="button1"><a href="#Navigation">Explore Modules</a></p>
+        </div>
+
+        <div class="column">
+          <img src="images/heroimg.png" width="110%" alt="Data Literacy Toolkit Hero Image"/>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- main content -->
   <main>
+
     <section>
-      <h2>Introduction</h2>
-      <p>In an increasingly data-driven society, our ability to understand, interpret, and responsibly use data is an important skill set not only for data and computer scientists but every member of the public. Growing data literacy among our citizenry is a shared responsibility, where all members of the campus community can play a critical role in building this competency. </p>
-      <p>The Data Literacy Toolkit is a research-informed resource to support community college educators and academic librarians in fostering a culture of data literacy across their institutions. Whether your aim is to improve your own data literacy, integrate data-based thinking into your curriculum, or create engaging data events on campus to support community-wide data literacy skills, this toolkit provides practical guidance, case studies, and adaptable strategies to support your goals. </p>
+      <h2><img src="images/Lightbulb_Icon.svg" height="36px" alt="Lightbulb Icon" style="vertical-align: top"/> Introduction</h2>
+      <p>
+        In an increasingly data-driven society, our ability to understand, interpret, and responsibly use data is an important skill set not only for data and computer scientists but every member of the public. Growing data literacy among our citizenry is a shared responsibility, where all members of the campus community can play a critical role in building this competency.
+      </p>
+      <p>
+        The Data Literacy Toolkit is a research-informed resource to support community college educators and academic librarians in fostering a culture of data literacy across their institutions. Whether your aim is to improve your own data literacy, integrate data-based thinking into your curriculum, or create engaging data events on campus to support community-wide data literacy skills, this toolkit provides practical guidance, case studies, and adaptable strategies to support your goals.
+      </p>
     </section>
 
+<hr class="divider">
+
     <section>
-      <h2>Learning Objectives</h2>
-	  <p>The purpose of the Data Literacy Toolkit is to empower community college educators to cultivate a culture of data literacy across their campus. We aim to provide flexible, modular resources to support lifelong data-informed thinking and decision-making that molds an educated and ethical community. By engaging with this toolkit, users will be able to:</p>
+      <h2><img src="images/Target_Icon.svg" height="36px" alt="Target Icon" style="vertical-align: top"/> Learning Objectives</h2>
+      <p>
+        The purpose of the Data Literacy Toolkit is to empower community college educators to cultivate a culture of data literacy across their campus. We aim to provide flexible, modular resources to support lifelong data-informed thinking and decision-making that molds an educated and ethical community. By engaging with this toolkit, users will be able to:
+      </p>
       <ol>
         <li>Define data literacy and articulate its value across the academic community.</li>
         <li>Identify foundational concepts and competencies required for data-literate thinking and behavior.</li>
@@ -48,36 +87,63 @@
       </ol>
     </section>
 
+<hr class="divider" id="Navigation">
+
     <section>
-      <h2>How to Navigate this Toolkit</h2>
-      <p>This toolkit is organized into five modules designed to introduce the concept of data literacy and how you can grow this skill set among students on your campus. The modular design allows you to review each module in order, or skip around to the modules that are most relevant to your interests and needs. Each module includes an overview of the topic, case study examples of the concept in action, a reflection activity to solidify learning, and additional resources to explore further. </p>
+      <h2><img src="images/Nav_Icon.svg" width="36px" alt="Navigation Icon" style="vertical-align: top"/> Navigating This Toolkit</h2>
+      <p>
+        This toolkit is organized into five modules designed to introduce the concept of data literacy and how you can grow this skill set among students on your campus. The modular design allows you to review each module in order, or skip around to the modules that are most relevant to your interests and needs. Each module includes an overview of the topic, case study examples of the concept in action, a reflection activity to solidify learning, and additional resources to explore further.
+      </p>
       <ul>
-        <li><a href="modules/dlmodule1.html">Module 1: The Foundations of Data Literacy</a> – Core concepts of data literacy and their importance for information professionals.</li>
+        <li><a href="modules/dlmodule1.html">Module 1: The Foundations of Data Literacy</a> – Core concepts of data literacy and their importance for professionals.</li>
         <li><a href="modules/dlmodule2.html">Module 2: Building a Data Culture on Your Campus</a> – Strategies to engage stakeholders and promote a data-savvy mindset.</li>
-        <li><a href="modules/dlmodule4.html">Module 3: Data and Data Sources</a> – Teaching about data types, sources, and quality evaluation.</li>
-        <li><a href="modules/dlmodule5.html">Module 4: Making Data Insightful and Actionable</a> – Instructing others about the interpretation, analysis, and communication of data.</li>
+        <li><a href="modules/dlmodule4.html">Module 3: Understanding Data and Data Sources</a> – Teaching about data types, sources, and quality evaluation.</li>
+        <li><a href="modules/dlmodule5.html">Module 4: Making Data Insightful and Actionable</a> – Instruction about interpretation, analysis, and communication of data.</li>
         <li><a href="modules/dlmodule6.html">Module 5: Managing Data Responsibly and Ethically</a> – Addressing privacy, bias, and ethical data use.</li>
       </ul>
-      <p>By using this toolkit, you will be empowered to enhance the data fluency of individuals across your institution and equip your learning community with the skills and tools necessary to make informed and responsible decisions grounded in data! </p>
-	  
+      <p>
+        By using this toolkit, you will be empowered to enhance the data fluency of individuals across your institution and equip your learning community with the skills and tools necessary to make informed and responsible decisions grounded in data!
+      </p>
     </section>
-	
-	<section>
-		<h2>Reusing and Citing this Toolkit</h2>
-		<p>This work is licensed under a <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener noreferrer">CC BY-NC 4.0 license</a>. You may use, share, and remix this content with proper attribution to the creators of this toolkit, as long as it is not used for commercial purposes. 
-		<p>This toolkit was developed with support from the Institute of Museum and Library Services <a href="https://www.imls.gov/grants/awarded/re-256673-ols-24" target="_blank" rel="noopener noreferrer">RE-256673-OLS-24</a> </p>
-	</section>
 
-	<section>	
-		<div class="nav-links">
-			<a href="modules/dlmodule1.html">Proceed to Module 1</a>
-		</div>
+<hr class="divider">
+
+    <section>
+      <h2><img src="images/CC_Icon.svg" height="36px" alt="Creative Commons Icon" style="vertical-align: top"/> Reusing and Citing this Toolkit</h2>
+      <p>
+        This work is licensed under a <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener noreferrer">CC BY-NC 4.0 license</a>.
+        You may use, share, and remix this content with proper attribution to the creators of this toolkit, as long as it is not used for commercial purposes.
+      </p>
+      <p>
+        This toolkit was developed with support from the Institute of Museum and Library Services 
+        <a href="https://www.imls.gov/grants/awarded/re-256673-ols-24" target="_blank" rel="noopener noreferrer">
+          RE-256673-OLS-24</a>. Additional information is available on the <a href="https://ci.unt.edu/dlcc/index.html">project website</a>.
+      </p>
+    </section>
+
+    <section>
+      <div class="nav-links">
+        <a href="modules/dlmodule1.html">Proceed to Module 1</a>
+      </div>
     </section>
 
   </main>
 
+  <!-- footer -->
   <footer>
-    <p>&copy; 2025 Data Literacy Toolkit. All rights reserved.</p>
+    <p>Content on this site is licensed under a <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener noreferrer">CC BY-NC 4.0 license</a>.</p>
   </footer>
+
+<script>
+  const hamburger = document.querySelector('.hamburger');
+  const navMenu = document.querySelector('.nav-right');
+
+  hamburger.addEventListener('click', () => {
+    const isOpen = navMenu.classList.toggle('open');
+    hamburger.setAttribute('aria-expanded', isOpen);
+  });
+</script>
+
 </body>
 </html>
+

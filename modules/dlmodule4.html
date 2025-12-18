@@ -6,26 +6,50 @@
   <title>Module 4: Making Data Insightful and Actionable</title>
   <link rel="stylesheet" href="../style.css" />
 </head>
+
 <body>
+
+<!-- header + navigation -->
   <header>
-    <div class="banner-container">
-        <a href="../index.html"><img src="../images/banner5.png" alt="Banner Image" class="banner" /></a>
-	</div>
+    <nav class="main-nav" aria-label="Main Navigation">
+      <div class="nav-container">
+
+        <!-- left nav: site title -->
+        <a class="site-title" href="../index.html"><img src="../images/dataicon.svg" width="15px" alt="Data Icon"/> Data Literacy Toolkit</a>
+
+        <!-- right: module links -->
+        <ul class="nav-right">
+          <li><a href="../modules/dlmodule1.html">Module 1</a></li>
+          <li><a href="../modules/dlmodule2.html">Module 2</a></li>
+          <li><a href="../modules/dlmodule3.html">Module 3</a></li>
+          <li><a class=active href="../modules/dlmodule4.html">Module 4</a></li>
+          <li><a href="../modules/dlmodule5.html">Module 5</a></li>
+        </ul>
+
+        <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false"> ☰ </button>
+
+      </div>
+    </nav>
   </header>
 
-<nav class="main-nav">
-  <ul>
-    <li><a href="../index.html">Home</a></li>
-    <li><a href="../modules/dlmodule1.html">Module 1</a></li>
-    <li><a href="../modules/dlmodule2.html">Module 2</a></li>
-    <li><a href="../modules/dlmodule3.html">Module 3</a></li>
-    <li><a href="../modules/dlmodule4.html">Module 4</a></li>
-    <li><a href="../modules/dlmodule5.html">Module 5</a></li>
-  </ul>
-</nav>
+  <!-- hero section -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="row">
 
+        <div class="column" style="color: #fefdfb;">
+          <h1>Module 4: Making Data Insightful and Actionable</h1>
+          <p>
+            Instructing others about the interpretation, analysis, and communication of data.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- main content -->
   <main>
-      <h1>Module 4: Making Data Insightful and Actionable</h1>
     <section>
       <h2>Learning Objectives</h2>
       <ul>
@@ -34,6 +58,8 @@
         <li>Support others in making informed decisions based on data interpretation and synthesis. </li>
       </ul>
     </section>
+
+<hr class="divider">
 
     <section>
       <h2>Distilling the Basics of Data Analysis</h2>
@@ -49,6 +75,8 @@
 	  </ol>
 	</section>
 
+<hr class="divider">
+
     <section>
       <h2>The Importance of Data Interpretation</h2>
       <p>Raw data cannot speak for itself. Often, the results that are produced following some kind of analysis are not in a format that can easily be consumed by others - numbers can easily be misunderstood or misused. It is the process of interpretation that transforms data into meaningful information that we can use. For this reason, some of the most important questions we can ask when assessing data literacy are “do you feel confident in understanding data visualizations” and “do you understand how to use data to inform decision making?” which get to the heart of being able to interpret findings <a href="#ref2">[2]</a>.  </p>
@@ -57,6 +85,8 @@
 	  <p>When teaching data interpretation in higher education, one might begin by providing a series of problems that present statistics about various populations and then ask the learners to write a paragraph explaining what these statistics mean. They could then present these summaries to fellow learners to receive feedback and refine. </p>
     </section>
 	
+<hr class="divider">
+
 	<section>
       <h2>How Can We Communicate Data Effectively?</h2>
       <p>As noted above, the actual analysis of data is only one step in the process of turning data into insights. Perhaps the most critical stage in this process is being able to communicate the significance of the data to others and create meaning. One important strategy for this stage of the process is data storytelling, which combines your data-based findings with narrative elements and visualizations in order to make the message more memorable and persuasive. Data storytelling is key to ensuring the audience understands the significance of the findings and can apply it in their own lives <a href="#ref3">[3]</a>. </p>
@@ -65,10 +95,14 @@
 	  <p>In teaching about data storytelling, it could be helpful to simply have learners practice creating stories around data for themselves <a href="#ref4">[4]</a>. One opportunity, discussed in our module, “Building a Data Culture on Your Campus” is to hold a data storytelling context, where students must locate a series of statistics and then create visualizations and a narrative to demonstrate the importance of these findings. The student(s) who perform the best could receive recognition or a prize to encourage a high level of competition. </p>
     </section>
 
+<hr class="divider">
+
     <section>
       <h2>Case Example</h2>
 	  <p>The Association for College and Research Libraries created a <a href="https://acrl.libguides.com/val/latoolkit/home" target="_blank" rel="noopener noreferrer">Learning Analytics Toolkit</a>, which provides guidance on using library and educational data for generating insights to support your institution. Not only does this resource provide good information for performing analyses on your own data, it also gives a great example and framework for developing a similar tool for your institution. Presenting this data in an easily digestible format for students, faculty, and staff will help grow interest in using data analytics and stimulate exploration of data in general. Like with the ACRL’s example, it may be useful to engage in cross-campus or interdisciplinary collaboration on your resource guide and make sure there are ample linkages to other resources for those who are interested in exploring further!</p>
     </section>
+
+<hr class="divider">
 
     <section>
       <h2>Reflection Activity</h2>
@@ -94,6 +128,8 @@
       </ul>
     </section>
 
+<hr class="divider">
+
     <section>
       <h2>References</h2>
       <ol>
@@ -114,8 +150,18 @@
   </main>
 
   <footer>
-    <p>&copy; 2025 Data Literacy Toolkit. All rights reserved.</p>
+    <p>Content on this site is licensed under a <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener noreferrer">CC BY-NC 4.0 license</a>.</p>
   </footer>
+
+<script>
+  const hamburger = document.querySelector('.hamburger');
+  const navMenu = document.querySelector('.nav-right');
+
+  hamburger.addEventListener('click', () => {
+    const isOpen = navMenu.classList.toggle('open');
+    hamburger.setAttribute('aria-expanded', isOpen);
+  });
+</script>
 
 </body>
 </html>
