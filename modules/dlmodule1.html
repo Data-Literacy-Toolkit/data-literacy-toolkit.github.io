@@ -3,30 +3,59 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Module 1: The Foundations of Data Literacy</title>
+  <title>Module 1: Exploring the Foundations of Data Literacy</title>
   <link rel="stylesheet" href="../style.css" />
 </head>
+
 <body>
+
+<!-- header + navigation -->
   <header>
-    <div class="banner-container">
-    <a href="../index.html"><img src="../images/banner2.jpg" alt="Banner Image" class="banner" /></a>
-	</div>
+    <nav class="main-nav" aria-label="Main Navigation">
+      <div class="nav-container">
+
+        <!-- left nav: site title -->
+        <a class="site-title" href="../index.html"><img src="../images/dataicon.svg" width="15px" alt="Data Icon"/> Data Literacy Toolkit</a>
+
+        <!-- right: module links -->
+        <ul class="nav-right">
+          <li><a class=active href="../modules/dlmodule1.html">Module 1</a></li>
+          <li><a href="../modules/dlmodule2.html">Module 2</a></li>
+          <li><a href="../modules/dlmodule3.html">Module 3</a></li>
+          <li><a href="../modules/dlmodule4.html">Module 4</a></li>
+          <li><a href="../modules/dlmodule5.html">Module 5</a></li>
+        </ul>
+
+        <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false"> ☰ </button>
+
+      </div>
+    </nav>
   </header>
 
-<nav class="main-nav">
-  <ul>
-    <li><a href="../index.html">Home</a></li>
-    <li><a href="../modules/dlmodule1.html">Module 1</a></li>
-    <li><a href="../modules/dlmodule2.html">Module 2</a></li>
-    <li><a href="../modules/dlmodule3.html">Module 3</a></li>
-    <li><a href="../modules/dlmodule4.html">Module 4</a></li>
-    <li><a href="../modules/dlmodule5.html">Module 5</a></li>
-  </ul>
-</nav>
+  <!-- hero section -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="row">
 
+        <div class="column" style="color: #fefdfb;">
+          <h1>Module 1: Exploring the Foundations of Data Literacy</h1>
+          <p>
+            Understanding the core components of data literacy their importance in educational and professional contexts.
+          </p>
+          <p class="button1"><a href="#Resources">Find Resources</a></p>
+        </div>
 
+        <div class="column">
+          <img src="../images/Module1_Hero.PNG" alt="Module 1 Hero Image" width="90%"/>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- main content -->
   <main>
-      <h1>Module 1: The Foundations of Data Literacy</h1>
+
     <section>
       <h2>Learning Objectives</h2>
       <ul>
@@ -35,6 +64,8 @@
         <li>Identify strategies for developing and strengthening data literacy skills.</li>
       </ul>
     </section>
+
+<hr class="divider">
 
     <section>
       <h2>What is Data Literacy?</h2>
@@ -51,6 +82,8 @@
       <p>Data literacy requires both technical skills, such as the ability to interpret common data visualizations and use basic analytical tools, as well as cognitive abilities like questioning assumptions, recognizing bias, and applying an ethical judgment  <a href="#ref2">[2]</a>. </p>
     </section>
 
+<hr class="divider">
+
     <section>
       <h2>Why is Data Literacy Important?</h2>
       <p>Data increasingly drives major decisions in all facets of our lives. Our ability to understand and use data responsibly is necessary to distinguish between credible information and mis/disinformation, make informed decisions, and correctly interpret trends and findings in learning, professional, and daily-living contexts. Several recent studies have shown that competency in data literacy concepts is a strong predictor of subjective well-being <a href="#ref3">[3]</a>.</p>
@@ -58,6 +91,8 @@
 	  <p>Within the higher education context, data literacy is critical for supporting student learning outcomes as well as enhancing the quality of faculty research, informing institutional planning, and guiding assessment. This skill set enables students to think critically and analytically in all disciplines, not just those that are data-intensive. Among university faculty, staff, and administrators, these skills promote evidence-based decision-making that enhances transparency and drives efforts for continuous improvement. </p>
       <p>Data literacy is also vital in empowering individuals to participate more fully in a democratic society. The abilities to read tables, figures, and charts in news stories or understand health trends and election data are fundamental to developing citizens that are engaged in our civic discourses and advocacy. It is necessary for us to develop skills in our students that enable them to be not just passive consumers of data in their world, but active and engaged participants in the data ecosystem. </p>
     </section>
+
+<hr class="divider" id="Resources">
 
     <section>
       <h2>Becoming Data Literate</h2>
@@ -73,10 +108,14 @@
 	  <p>In order to enhance data literacy on your campus, it is important to first become data literate yourself. This does not require a formal education or degree. Just informal learning and practice through toolkits like this one can prepare you with the skills you need to be a data literacy instructor and advocate! </p>
     </section>
 
+<hr class="divider">
+
     <section>
       <h2>Case Example</h2>
       <p>The University of South Florida-St. Petersburg engaged in the creation of a series of <a href="https://lib.usf.edu/research-and-instruction/workshops/a-z-list-of-info-data-literacy-workshops/" target="_blank" rel="noopener noreferrer">data literacy workshops and initiatives</a> to build on existing, successful information literacy programs. The outcomes of these programs for enhancing data literacy skills is discussed in a 2020 article by Burress et al. <a href="#ref4">[4]</a>. This program was driven by an interdisciplinary and cross-campus collaboration to expand data literacy skills that could be applied across disciplines. The initiative centered on a framework for data literacy that discussed data in all its forms but particularly emphasized research data skills. The success of this program allowed it to be integrated into the general education curriculum, engaging hundreds of students each year in data instruction.</p>
     </section>
+
+<hr class="divider">
 
     <section>
       <h2>Reflection Activity</h2>
@@ -103,6 +142,8 @@
       </ul>
     </section>
 
+<hr class="divider">
+
     <section>
       <h2>References</h2>
       <ol>
@@ -123,8 +164,18 @@
   </main>
 
   <footer>
-    <p>&copy; 2025 Data Literacy Toolkit. All rights reserved.</p>
+    <p>Content on this site is liscensed under a <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener noreferrer">CC BY-NC 4.0 license</a>.</p>
   </footer>
+
+<script>
+  const hamburger = document.querySelector('.hamburger');
+  const navMenu = document.querySelector('.nav-right');
+
+  hamburger.addEventListener('click', () => {
+    const isOpen = navMenu.classList.toggle('open');
+    hamburger.setAttribute('aria-expanded', isOpen);
+  });
+</script>
 
 </body>
 </html>

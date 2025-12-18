@@ -1,18 +1,184 @@
+/* global styles */
+
+* {
+  box-sizing: border-box;
+}
+
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'DM Sans', Arial, sans-serif;
   margin: 0;
   padding: 0;
   line-height: 1.6;
-  background: #f9f9f9;
-  color: #333;
+  background: #fefdfb;
+  color: #08362e;
 }
 
-header {
-  background: #486948; 
-  color: #486948;
-  padding: 1rem 0;
-  text-align: center;
+html {
+  scroll-behavior: smooth;
 }
+
+/* global link reset */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* divider line */
+hr.divider {
+  border-top: 1px solid #EC8572;
+  margin: 2.5em 0;
+}
+
+
+/* typography */
+
+h1 {
+  color: #fefdfb;
+  font-size: 2rem;
+  line-height: normal;
+  margin: 2rem 0 1rem 0;
+}
+
+h2 {
+  color: #265A5C;
+  margin: 2rem 0 1rem 0 ;
+}
+
+ul, ol {
+  padding-left: 1.5rem;
+}
+
+
+/* layout containers */
+
+main {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: auto;
+  background: #fefdfb;
+}
+
+.nav-container,
+.hero-inner {
+  max-width: 1000px;
+  margin: auto;
+}
+
+
+/* navigation */
+
+.main-nav {
+  background-color: #3E898B;
+  width: 100%;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+/* site title */
+.site-title {
+  color: #fefdfb;
+  font-size: 1.2rem;
+  font-weight: 700;
+  transition: color 0.3s;
+}
+.site-title:hover {
+  color: #f7a293;
+}
+
+/* right-side nav list */
+.nav-right {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-right a {
+  color: #fefdfb;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.nav-right a:hover {
+  color: #f7a293;
+}
+
+.nav-right a.active {
+  text-decoration: underline;
+}
+
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  color: #fefdfb;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+
+  .hamburger {
+    display: block;
+  }
+
+  .nav-right {
+    position: absolute;
+    top: 70px; /* below nav bar */
+    right: 0;
+    background-color: #3E898B;
+    flex-direction: column;
+    width: 100%;
+    display: none;
+    padding: 1rem 0;
+  }
+
+  .nav-right li {
+    text-align: center;
+    padding: 0.5rem 0;
+  }
+
+  .nav-right.open {
+    display: flex;
+  }
+}
+
+
+/* hero section (50/50 columns) */
+
+.hero {
+  background-color: #265A5C;
+  width: 100%;
+  padding: 2rem 0 1rem 0;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 2rem;
+}
+
+@media screen and (max-width: 800px) {
+  .column {
+    width: 100%;
+  }
+}
+
+
+/* banner images */
 
 .banner-container {
   display: flex;
@@ -21,44 +187,15 @@ header {
 }
 
 .banner {
+  display: block;
+  max-width: 1000px;
   max-height: 200px;
   width: auto;
   height: auto;
-  max-width: 100%;
-  display: block;
 }
 
-.main-nav {
-  background-color: #000000; 
-  padding: 10px 0;
-}
 
-.main-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-.main-nav li {
-  display: inline;
-}
-
-.main-nav a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  padding: 8px 12px;
-  transition: background-color 0.3s;
-}
-
-.main-nav a:hover {
-  background-color: #486948;
-  border-radius: 4px;
-}
+/* pi grid (information cards) */
 
 .pi-container {
   display: grid;
@@ -68,7 +205,7 @@ header {
 }
 
 .pi {
-  background-color: #f9f9f9;
+  background-color: #ddf0ee;
   padding: 1em;
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
@@ -79,19 +216,10 @@ header {
   font-size: 1.2em;
 }
 
-.pi a {
-  text-decoration: none;
-  color: #1a4b7c;
-}
-
-.pi a:hover {
-  text-decoration: underline;
-}
-
 .pi p {
   margin: 0.5em 0 0;
   font-size: 0.95em;
-  color: #333;
+  color: #265A5C;
 }
 
 @media (max-width: 600px) {
@@ -100,66 +228,51 @@ header {
   }
 }
 
+/* card links */
+.pi a {
+  color: #265A5C;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.pi a:hover {
+  text-decoration: underline;
+}
 
+
+/* buttons */
+
+.button1 {
+  background-color: #3E898B;
+  color: #fefdfb;
+  border-radius: 4px;
+  padding: 10px;
+  width: fit-content;
+  transition: background-color 0.3s;
+  text-align: left;
+}
+
+.button1 a {
+  color: #fefdfb;
+  text-decoration: none;
+}
+
+.button1:hover {
+  background-color: #4aa0a5;
+}
+
+
+/* forms */
 
 .form {
-        max-width: 400px;
-        margin: auto;
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-      }
-
-
-main {
-  padding: 2rem;
-  max-width: 900px;
+  max-width: 400px;
   margin: auto;
-  background: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
-h1 {
-  color: #000000;
-  text-align: center;
-}
 
-h2 {
-  color: #000000;
-}
-
-ul, ol {
-  padding-left: 1.5rem;
-}
-
-.float-image-left,
-.float-image-right {
-  max-height: 16em;
-  width: auto;
-  height: auto;
-  border-radius: 8px;
-  margin-bottom: 1em; 
-}
-
-.float-image-left {
-  float: left;
-  margin-right: 2em; 
-}
-
-.float-image-right {
-  float: right;
-  margin-left: 2em; 
-}
-
-.img-left  {
-	float: left;
-	max-height: 12em;
-	max-width: 36em;
-	height: auto;
-	width: auto;
-	border-radius: 8px;
-	margin-bottom: 1em;
-	margin-right: 2em;
-}
+/* module navigation */
 
 .nav-links {
   display: flex;
@@ -167,22 +280,58 @@ ul, ol {
   gap: 2rem;
   flex-wrap: wrap;
   padding-top: 2.5rem;
-  
-  font-size: 1.1rem;   
-  font-weight: 600;  
+
+  font-size: 1.1rem;
+  font-weight: 600;
   letter-spacing: 0.5px;
 }
+
+
+/* floating images */
+
+.float-image-left,
+.float-image-right {
+  max-height: 16em;
+  width: auto;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 1em;
+}
+
+.float-image-left {
+  float: left;
+  margin-right: 2em;
+}
+
+.float-image-right {
+  float: right;
+  margin-left: 2em;
+}
+
+.img-left {
+  float: left;
+  max-height: 12em;
+  max-width: 36em;
+  height: auto;
+  width: auto;
+  border-radius: 8px;
+  margin-bottom: 1em;
+  margin-right: 2em;
+}
+
+
+/* footer */
 
 footer {
   text-align: center;
   padding: 1rem;
-  background: #eee;
+  background: #fefdfb;
   font-size: 0.9em;
   margin-top: 2rem;
 }
 
 module-footer {
-  background-color: #f0f0f0;
+  background-color: #fefdfb;
   padding: 2rem 1rem;
   text-align: center;
   font-size: 1.2rem;
@@ -190,11 +339,22 @@ module-footer {
 }
 
 module-footer a {
-  text-decoration: none;
   color: #004080;
   transition: color 0.2s ease;
 }
 
 module-footer a:hover {
   color: #002f5f;
+}
+
+
+/* link styles (main content only) */
+
+main a {
+  color: #C1513E;
+  text-decoration: underline;
+}
+
+main a:hover {
+  color: #9b3f31;
 }
